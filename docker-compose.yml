@@ -1,0 +1,10 @@
+version: '2'
+services:
+  worker:
+    environment:
+      - NODE_ENV=production
+    build: .
+
+    volumes:
+      - .:/app
+      - /app/node_modules
